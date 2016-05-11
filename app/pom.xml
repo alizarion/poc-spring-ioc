@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.github.alizarion.poc</groupId>
+        <artifactId>poc-spring-ioc</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>io.github.alizarion.poc.app</groupId>
+    <artifactId>poc-spring-ioc-app</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>Simple spring IOC POC.</name>
+    <description>
+        POC using spring IOC as equivalent to .net MEF
+    </description>
+    <modules>
+    </modules>
+
+
+    <developers>
+        <developer>
+            <id>Alizarion</id>
+            <email>selim@openlinux.fr</email>
+            <name>Selim Bensenouci</name>
+        </developer>
+
+    </developers>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.alizarion.poc.api</groupId>
+            <artifactId>poc-spring-ioc-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.alizarion.poc.impl</groupId>
+            <artifactId>poc-spring-ioc-impl</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>4.2.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.2.0.RELEASE</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
