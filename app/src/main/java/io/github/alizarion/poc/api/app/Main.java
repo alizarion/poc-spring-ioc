@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws InstantiationException, IllegalAccessException {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         Mission mission = (Mission) context.getBean("mission");
         mission.killThemAll();

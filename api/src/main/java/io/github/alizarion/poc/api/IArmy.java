@@ -7,5 +7,5 @@ import java.util.Set;
  */
 public interface IArmy {
 
-    public Set<IRobot> getArmy();
+    public Set<Class<? extends IRobot>> getArmy();
 }

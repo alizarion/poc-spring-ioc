@@ -18,11 +18,12 @@ public class Mission {
         this.iArmy = iArmy;
     }
 
-    public void killThemAll(){
-      for(IRobot iRobot : iArmy.getArmy()){
-          System.out.println(iRobot.present());
-          System.out.println(iRobot.issueMessage());
-          System.out.println(iRobot.fire());
+    public void killThemAll() throws IllegalAccessException, InstantiationException {
+      for(Class<? extends IRobot>  aClass: iArmy.getArmy()){
+          IRobot robot  = aClass.newInstance();
+          System.out.println(robot.present());
+          System.out.println(robot.issueMessage());
+          System.out.println(robot.fire());
       }
 
     }

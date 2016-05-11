@@ -14,10 +14,10 @@ public class ArmyImpl implements IArmy {
 
 
     @Override
-    public Set<IRobot> getArmy() {
-        Set<IRobot> iRobots = new HashSet<IRobot>();
-        iRobots.add(new Terminator());
-        iRobots.add(new R2D2());
+    public Set<Class<? extends IRobot>> getArmy() {
+        Set<Class<? extends IRobot>>  iRobots = new HashSet<Class<? extends IRobot>>();
+        iRobots.add(Terminator.class);
+        iRobots.add(R2D2.class);
         return iRobots;
     }
 }
