@@ -2,20 +2,23 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.alizarion.poc</groupId>
-    <artifactId>poc-spring-ioc</artifactId>
+   <parent>
+       <groupId>io.github.alizarion.poc</groupId>
+       <artifactId>poc-spring-ioc</artifactId>
+       <version>1.0.0-SNAPSHOT</version>
+   </parent>
+
+
+    <groupId>io.github.alizarion.poc.impl</groupId>
+    <artifactId>poc-spring-ioc-impl2</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <name>Simple spring IOC POC.</name>
     <description>
         POC using spring IOC as equivalent to .net MEF
     </description>
     <modules>
-        <module>api</module>
-        <module>app</module>
-        <module>impl</module>
-        <module>impl2</module>
     </modules>
 
 
@@ -29,7 +32,11 @@
     </developers>
 
     <dependencies>
-       
+        <dependency>
+            <groupId>io.github.alizarion.poc.api</groupId>
+            <artifactId>poc-spring-ioc-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

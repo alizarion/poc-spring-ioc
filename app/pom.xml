@@ -38,9 +38,15 @@
         </dependency>
         <dependency>
             <groupId>io.github.alizarion.poc.impl</groupId>
+            <artifactId>poc-spring-ioc-impl2</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.alizarion.poc.impl</groupId>
             <artifactId>poc-spring-ioc-impl</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
