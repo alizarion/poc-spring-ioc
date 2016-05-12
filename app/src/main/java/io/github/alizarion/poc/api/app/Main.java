@@ -1,16 +1,12 @@
 package io.github.alizarion.poc.api.app;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 /**
- * Created by sbn on 09/05/2016.
+ * @author selim@openlinux.fr
  */
 public class Main {
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException {
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Mission mission = (Mission) context.getBean("mission");
+        Mission mission = new Mission();
         mission.killThemAll();
     }
 }

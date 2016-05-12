@@ -3,9 +3,9 @@ package io.github.alizarion.poc.impl;
 import io.github.alizarion.poc.api.IRobot;
 
 /**
- * Created by sbn on 09/05/2016.
+ * selim@openlinux.fr
  */
-public class R2D2 extends IRobot {
+public class R2D2 implements IRobot {
     @Override
     public String present() {
         return "bip blop bip blaoup !";

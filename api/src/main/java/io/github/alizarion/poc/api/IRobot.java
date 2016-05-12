@@ -1,15 +1,15 @@
 package io.github.alizarion.poc.api;
 
 /**
- * Created by sbn on 09/05/2016.
+ * @author selim@openlinux.fr
  */
-public abstract class IRobot {
+public interface  IRobot {
 
 
-    public  abstract String present();
+    public  String present();
 
-    public  abstract String issueMessage();
+    public  String issueMessage();
 
-    public abstract String fire();
+    public String fire();
 
 }
